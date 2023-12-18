@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style>
+        hr {
+            position: relative;
+            border: none;
+            height: 3px;
+            background: darkorange;
+            margin-bottom: 50px;
+        }
+    </style>
+    <title>localshoppi</title>
+</head>
+
+<body>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example"
+        tabindex="0">
+        <nav class="navbar bg-primary py-0 navbar-expand-sm">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" style="padding-left:5%;">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <i class="fas fa-map-marker-alt fa-lg" style="color:darkorange;"></i>
+                            <input id="search_input" class=" rounded-pill" placeholder="Enter location">
+                            <button class="search rounded-pill ps-1 bg-warning text-white" style="color:rgb(252, 211, 161);">
+                                <i class="fa fa-location fw-bold"></i><img src="D:/Internship/location.svg">Locate Me </button>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto justify-content-end mx-5 pt-0 pb-2">
+                        <li class="nav-item">
+                            <i class="fa fa-user fa-xs pt-3 pe-0" style="color:darkorange;"></i>
+                        </li>
+                        <li class="nav-item ps-0">
+                            <a class="nav-link text-white ps-1" href="#">
+                                <b><small>Be an Franchaiser</small></b>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fa fa-lock fa-xs pt-3 pe-0" style="color:darkorange;"></i>
+                        </li>
+                        <li class=" nav-item ">
+                            <a class=" nav-link text-white ps-1" href="#">
+                                <b><small>Login</small></b>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fa fa-user fa-xs pt-3 pe-0 " style="color:darkorange;"></i>
+                        </li>
+                        <li class=" nav-item pe-5 ">
+                            <a class=" nav-link ps-1 text-white" href="#">
+                                <b><small>SignIn</small></b>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <nav>
+            <img src="logo.jpg" class="px-5 ps-5 pt-2">
+            <hr>
+        </nav>
+        <br>
+        <div class="container">
+            <div class="grid">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 text-center">
+                        <img src="foodpic.png" class="image-fluid" width="400px" height="400px">
+                    </div>
+                    <div class="card col-sm-12 col-md-6 text-center shadow-lg" style="width: 400px;">
+                        <div class="card-body" style="background-color:white">
+                            <h4 class="p-2"><b>Register Form</b></h4>
+                            <form>
+                                <fieldset>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="fa fa-user fa-2xs"></i></span>
+                                            <input id="id" placeholder="Full name" type="text" formcontrolname="name"
+                                                pattern="\s?[a-zA-Z]+([\s]?[a-zA-Z]+)*" required
+                                                class="form-control login-controls ng-untouched ng-pristine ng-invalid">
+                                        </div>
+                                    </div>
+                                    <div class="form-group mt-3">
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                                            <input id="id" placeholder="Email name" type="email" required
+                                                class="form-control login-controls ng-untouched ng-pristine ng-invalid">
+                                        </div>
+                                    </div>
+                                    <div class="form-group mt-3">
+                                        <div class="input-group">
+                                            <span class="input-group-text">+91</span>
+                                            <input id="phonenumber" placeholder="phone number" type="text"
+                                                formcontrolname="mobile" required
+                                                class="form-control login-controls ng-untouched ng-pristine ng-invalid">
+                                        </div>
+                                    </div>
+                                    <div class="form-group mt-3">
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="fa fa-key"></i></span>
+                                            <input id="id" placeholder="password" type="password" required 
+                                                class="form-control login-controls ng-untouched ng-pristine ng-invalid">
+                                            <span class="input-group-text"><i class="fa fa-eye-slash"></i></span>
+                                        </div>
+
+                                    </div>
+                                    <div class="form-group mt-3">
+                                        <input _ngcontent-vld-c46="" class="form-control btn btn-warning" value="Register" type="submit"
+                                            class="btn btn-lg btn-block btn-warning rounded-pill font-family: inter;"
+                                            disabled="">
+                                    </div>
+                                    <h6 _ngcontent-uag-c46=""
+                                        class="text-center text-muted m3-5 mb-0 font-family: inter;"> Have already an
+                                        account? <a _ngcontent-uag-c46="" routerlink="/login"
+                                            class="fw-bold text-body logintext" href="/login">Login here</a></h6>
+                                </fieldset>
+                            </form>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br><br>
+    <footer id="footer" class="">
+        <div class="section bg-primary text-white">
+            <br><br>
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-4 col-xs-4" style="font-family:Inter,sans-serif;">
+                        <div class="footer">
+                                <p class="fw-bold">ABOUT</p>
+                                <img src="logo1.png" height="50" width="100" class="service-img">
+                                <p><i class="fa fa-phone icon"></i>+917305809592</p>
+                                <p><i class="fa fa-envelope"></i>support@localshoppi.com</p>
+                                <p> <i class="fa fa-whatsapp"></i>917305809592</p>
+                                <p><i class="fa fa-user"></i>Be a Merchant?</p>
+                                <p><i class="fa fa-user"></i>Be a Franchise owner?</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-4" style="font-family:Inter,sans-serif;">
+                        <div class="footer ">
+                            <p class="fw-bold">INFORMATION</p>
+                            <p>About</p>
+                            <p>Contact Us</p>
+                            <p>Privacy Policy</p>
+                            <p>Refund Policy</p>
+                            <p>Terms & Conditions</p>
+                            <p>Delivery Policy</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-4" style="font-family:Inter,sans-serif;">
+                        <div class="footer">
+                            <p class="fw-bold">DOWNLOAD OUR APP</p>
+                            <img src="googleplay.png" height="70" width="200"><br><br>
+                            <img src="appstore.png" height="70" width="200"><br>
+                            <i class="fab fa-facebook fa-2x p-2";style="color:white"></i>
+                            <i class="fab fa-instagram fa-2x p-2";style="color:white"></i>
+                            <i class="fa fa-youtube fa-2x p-2";style="color:white"></i>
+                            <i class="fab fa-linkedin fa-2x p-2";style="color:white"></i>
+                            <i class="fab fa-twitter fa-2x p-2";style="color:white"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="bottom-footer" class="section bg-warning">
+            <div class="container-fluid" style="text-align: center;font-family: Inter,sans-serif;">
+                <section style="background-color: darkorange;color:white" class="p-2 text-center fw-bold">
+                    <p>Copyright @ All rights reserved | This site is made by Srinadh</p>
+                </section>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
